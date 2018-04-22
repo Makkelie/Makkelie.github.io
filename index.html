@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>iQ-online_test</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+</head>
+<body>
+	<div class="wrapper">
+<!-- Основной контент -->
+		<div class="content">
+		<!-- Шапка -->
+			<header class="header">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="World Bank">
+				</a>
+				<div class="hot_lines">
+					<a href="#">
+						8-800-100-5005
+					</a>
+					<a href="#">
+						+7 (3452) 522-000
+					</a>
+				</div>
+			</header>
+			<!-- Навигация / меню -->
+			<nav class="navigation">
+				<ul>
+					<li>
+						<a href="#">
+							Кредитные карты
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Вклады
+						</a>
+						</li>
+					<li>
+						<a href="#">
+							Дебетовая карта
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Страхование
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Друзья
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Интернет-банк
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<section>
+			<!-- Хлебные крошки -->
+				<ul class="breadcrumb">
+					<li class="with_sep"><a href="#"></a>Главная</li>
+					<li class="with_sep"><a href="#"></a>Вклады</li>
+					<li class='current'>Калькулятор</li>
+				</ul>
+			</section>
+			<!-- Калькулятор -->
+			<main class="calc">
+				<p class="main_header">
+					Калькулятор
+				</p>
+				<div class="main_content">
+					<form class="calc_form">
+						<div class="label_items">
+							<label for="date">Дата оформления вклада</label>
+							<label for="sum">Сумма вклада</label>
+							<label for="#">Срок вклада</label>
+							<p>Пополнение вклада</p>
+							<label for="contr">Сумма пополнения вклада</label>
+						</div>
+						<div class="input_items">
+							<input class="input_item" id="date_item" type="text" autofocus required placeholder=" дд.мм.гггг">
+							<input class="input_item" id="sum" type="text" min="1000" max="3000000" placeholder=" 10 000" required>
+							<select class="input_item" name="years" id="years">
+								<option selected value="1 год">1 год</option>
+								<option value="2 года">2 года</option>
+								<option value="3 года">3 года</option>
+								<option value="4 года">4 года</option>
+								<option value="5 лет">5 лет</option>
+							</select>
+							<div class="radio_item">
+								<label class="radio"><input type="radio" name="radio1" checked><span>Нет</span></label>
+								<label class="radio"><input type="radio" name="radio1"><span>Да</span></label>
+							</div>
+							<input class="input_item" id="contr" type="text" min="1000" max="3000000" placeholder=" 10 000" required>
+						</div>
+					</form>
+				</div>
+				<div class="main_footer">
+					<button class="btn" type="submit">Рассчитать</button>
+					<p class="res">Результат: <span>10 250 руб.</span></p>
+				</div>
+			</main>
+		</div>
+		<!-- Подвал -->
+		<footer class="footer">
+			<ul>
+				<li>
+					<a href="#">
+						Кредитные карты
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Вклады
+					</a>
+					</li>
+				<li>
+					<a href="#">
+						Дебетовая карта
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Страхование
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Друзья
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Интернет-банк
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+	<!-- link JS -->
+	
+	<script type="text/javascript" src="js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

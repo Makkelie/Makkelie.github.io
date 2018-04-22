@@ -1,0 +1,339 @@
+/* colors */
+/* variables / fonts */
+/* basic setting */
+html {
+  font-size: 10px;
+  font-family: 'Arial';
+}
+html li {
+  list-style: none;
+}
+html a {
+  text-decoration: none;
+}
+html h1,
+html h2,
+html h3,
+html p {
+  margin: 0;
+}
+html ul {
+  padding-left: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+:focus {
+  outline: none;
+}
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+/* style */
+.wrapper {
+  max-width: 110rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.wrapper .header {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .header .hot_lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .header .hot_lines a {
+  font-family: 'Europe';
+  color: #eb5017;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.wrapper .navigation {
+  margin-top: 2rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.wrapper .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #231f20;
+}
+.wrapper .navigation ul li {
+  padding: 1.5rem 4rem;
+  border-right: 1px solid #eb5017;
+}
+.wrapper .navigation ul li:hover {
+  background-color: #eb5017;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.wrapper .navigation ul li:last-child {
+  border-right: none;
+}
+.wrapper .navigation ul li a {
+  font-family: 'Arial';
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+.wrapper section .breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+.wrapper section .breadcrumb li {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #000000;
+  cursor: pointer;
+}
+.wrapper section .breadcrumb .with_sep:after {
+  content: "-";
+  padding-left: 0.7rem;
+  text-decoration: none;
+}
+.wrapper .calc {
+  margin: 2rem 1rem 2rem;
+  width: 65%;
+  max-width: 65rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f2f2f2;
+}
+.wrapper .calc .main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #eb5017;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 2rem 0 0 10rem;
+}
+.wrapper .calc .calc_form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .calc .calc_form .label_items {
+  margin: 0 3rem 0 2rem;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 17.5rem;
+          flex: 0 1 17.5rem;
+  -ms-flex-preferred-size: 17.5rem;
+      flex-basis: 17.5rem;
+  line-height: 2.3rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.wrapper .calc .calc_form .label_items label,
+.wrapper .calc .calc_form .label_items p {
+  padding-top: 3rem;
+}
+.wrapper .calc .calc_form .input_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.wrapper .calc .calc_form .input_items .input_item {
+  width: 9rem;
+  margin-top: 2.8rem;
+  height: 2.1rem;
+  border: 1px solid #cfd1d2;
+  line-height: 2.1rem;
+}
+.wrapper .calc .calc_form .input_items .radio_item {
+  margin-top: 2.8rem;
+}
+.wrapper .calc .calc_form .input_items .radio_item .radio input {
+  display: none;
+}
+.wrapper .calc .calc_form .input_items .radio_item .radio input:checked + span:after {
+  opacity: 1;
+}
+.wrapper .calc .calc_form .input_items .radio_item .radio span {
+  position: relative;
+  padding-left: 2.2rem;
+}
+.wrapper .calc .calc_form .input_items .radio_item .radio span:before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid #a0a0a0;
+  top: 0;
+  bottom: 0;
+  left: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: 1;
+  position: absolute;
+}
+.wrapper .calc .calc_form .input_items .radio_item .radio span:after {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1398dd;
+  top: 0;
+  bottom: 0;
+  left: 0.8rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: 0;
+}
+.wrapper .calc .main_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .calc .main_footer .btn {
+  margin: 4.4rem 2.5rem 3.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  cursor: pointer;
+  color: #395306;
+  border: 1px solid #c3c4c4;
+  background: #eaff00;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaff00), color-stop(3%, #a3f500), color-stop(16%, #9ff100), color-stop(32%, #92ec00), color-stop(39%, #89e700), color-stop(45%, #70e100), color-stop(84%, #52cd00), to(#4ac700));
+  background: linear-gradient(to bottom, #eaff00 0%, #a3f500 3%, #9ff100 16%, #92ec00 32%, #89e700 39%, #70e100 45%, #52cd00 84%, #4ac700 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaff00', endColorstr='#4ac700', GradientType=0);
+}
+.wrapper .calc .main_footer .btn:hover {
+  background: #eaff00;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #eaff00 0%, #a3f500 3%, #9ff100 16%, #92ec00 32%, #89e700 39%, #70e100 45%, #52cd00 84%, #4ac700 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaff00', endColorstr='#4ac700', GradientType=1);
+}
+.wrapper .calc .main_footer .res {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #395306;
+}
+.wrapper .calc .main_footer .res span {
+  ont-size: 1.4rem;
+  line-height: 1.5;
+  color: #000000;
+}
+.wrapper .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 5.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  background-color: #231f20;
+}
+.wrapper .footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.wrapper .footer ul li {
+  margin: 1.3rem 3rem 3rem;
+}
+.wrapper .footer ul li:first-child {
+  margin-left: 6rem;
+}
+.wrapper .footer ul li a {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-decoration: underline;
+  color: #ffffff;
+}
